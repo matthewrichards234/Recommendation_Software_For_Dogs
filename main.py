@@ -1,5 +1,6 @@
 from classNode import *
 from classLinkedList import *
+from Data import *
 
 def main():
     # Create linked lists for dog breeds and stats

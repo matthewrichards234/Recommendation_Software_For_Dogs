@@ -57,7 +57,7 @@ breeds_of_dogs = [
 
 
 
-dog_breed_data = dog_breed_data = [
+dog_breed_data = [
     ['Labrador Retriever', '21-24 inches', '55-80 pounds', '10-12 years', 3, False],
     ['German Shepherd', '22-26 inches', '50-90 pounds', '9-13 years', 4, True],
     ['Golden Retriever', '21.5-24 inches', '55-75 pounds', '10-12 years', 3, True],
