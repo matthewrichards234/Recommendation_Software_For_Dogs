@@ -1,20 +1,19 @@
 from classNode import *
 
 class LinkedList:
-  def __init__(self, value, next_node=None):
-    self.value = value
-    self.next_node = next_node
+  def __init__(self):
+    self.head = None
 
   def is_empty(self):
     return self.head_node is None
 
   def get_head_node(self):
-    return self.head_node
+    return self.head
   
   def insert_beginning(self, new_value):
     new_node = Node(new_value)
-    new_node.set_next_node(self.head_node)
-    self.head_node = new_node
+    new_node.set_next_node(self.head)
+    self.head = new_node
 
   def stringigy_list(self):
     string_list = ""
@@ -28,7 +27,7 @@ class LinkedList:
   def remove_node(self, value_to_remove):
     current_node = self.get_head_node()
     if current_node.get_value == value_to_remove:
-      self.head_node = current_node.get_next_node()
+      self.head = current_node.get_next_node()
     else:
       while current_node:
         next_node = current_node.get_next_node()

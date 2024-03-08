@@ -7,6 +7,9 @@ def main():
     breeds_list = LinkedList()
     stats_list = LinkedList()
 
+    for sublist in breeds_of_dogs:
+        print(sublist[0])
+
     # Populate the linked lists with dog breeds and stats
     for breed_data in dog_breed_data:
         breed_name = breed_data[0]
